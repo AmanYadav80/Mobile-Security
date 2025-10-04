@@ -1,0 +1,14 @@
+# Node.js
+phishing-dashboard/node_modules/
+phishing-dashboard/.next/
+
+# Python
+backend/__pycache__/
+*.pyc
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
