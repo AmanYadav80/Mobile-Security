@@ -1,14 +1,39 @@
-# Node.js
-phishing-dashboard/node_modules/
-phishing-dashboard/.next/
-
-# Python
-backend/__pycache__/
-*.pyc
-
-# Environment
+# --- Security: Never commit secret keys! ---
 .env
-*.env
+.env*.local
 
+# --- Python / Backend ---
+# Compiled Python files and cache
+backend/__pycache__/
+backend/*.pyc
+
+# Virtual environment folders (good practice to include)
+backend/venv/
+backend/env/
+
+# --- Node.js / Frontend ---
+# The massive folder of dependencies
+frontend/node_modules/
+
+# Next.js build output and cache
+frontend/.next/
+frontend/out/
+
+# Log files
+*.log
+
+# --- Large Data & Generated Model Files ---
+# Don't commit large datasets, just the code to use them
+backend/data/
+backend/top-1m.csv
+
+# Don't commit the trained model, just the script that creates it
+backend/model.joblib
+backend/vectorizer.joblib
+
+# --- OS-specific files ---
 # macOS
 .DS_Store
+
+# Windows
+Thumbs.db
